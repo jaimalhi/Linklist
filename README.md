@@ -9,5 +9,5 @@
 
 ### Tech Stack
 
--  Svelte/SvelteKit
+-  Svelte/SvelteKit V4.2.0
 -  Firebase
