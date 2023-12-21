@@ -11,3 +11,4 @@
 
 -  Svelte/SvelteKit V4.2.0
 -  Firebase
+-  Tailwind + DaisyUI
