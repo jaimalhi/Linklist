@@ -19,7 +19,6 @@ export const db = getFirestore();
 export const auth = getAuth();
 export const storage = getStorage();
 
-// Stores
 /**
  * @returns a store with the current firebase user
  */
@@ -50,6 +49,7 @@ export const user = userStore();
 
 /**
  * @param  {string} path document path or reference
+ * @param  {any} startWith optional default data
  * @returns a store with realtime updates on document data
  */
 export function docStore<T>(path: string) {
@@ -72,11 +72,11 @@ export function docStore<T>(path: string) {
    };
 }
 
-// derived store
 interface UserData {
    username: string;
    bio: string;
    photoURL: string;
+   published: boolean;
    links: any[];
 }
 
